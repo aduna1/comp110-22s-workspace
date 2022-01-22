@@ -36,7 +36,10 @@ if str(word_input[4]) == character_input:
     print(character_input + " found at index 4")
     number_of_matches = number_of_matches + 1
 
-if number_of_matches > 0:
-    print(str(number_of_matches) + " instances of " + character_input + " found in " + word_input) 
+if number_of_matches == 1:
+    print(str(number_of_matches) + " instance of " + character_input + " found in " + word_input)
 else:
-    print("No instances of " + character_input + " found in " + word_input)
+    if number_of_matches > 1:
+        print(str(number_of_matches) + " instances of " + character_input + " found in " + word_input) 
+    else:
+        print("No instances of " + character_input + " found in " + word_input)
