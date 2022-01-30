@@ -13,11 +13,11 @@ match_guess_index = 0
 emoji_guess_index: str = ""
 
 while len(guess) != len(secret_word):  # this line prevents users from entering any word that is not 6 letters.
-    guess: str = input("That was not 6 letters! Try again: ")  # this had an error code in autograder: 'already defined'.
+    guess = input("That was not 6 letters! Try again: ")  # this had an error code in autograder: 'already defined'.
 
 while match_guess_index < len(secret_word):  # this block of code searches through the word for character matches between it and the secret.
     if guess[match_guess_index] == secret_word[match_guess_index]:
-        emoji_guess_index + GREEN_BOX  # this line helps display a green box when a letter is in the right spot. 
+        emoji_guess_index += GREEN_BOX  # this line helps display a green box when a letter is in the right spot. 
     else:  # this block sets up the display of yellow and white boxes when the letter is in the word but not in the right spot, and when it is not in the word respectively.
         guess_character_present: bool = False
         secret_alt_ind = 0
