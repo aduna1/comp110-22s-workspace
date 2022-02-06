@@ -56,11 +56,11 @@ def main() -> None:
         print(emojified(guess, secret))
         if guess == secret:
             print(f"You won in {turn}/{tries} turns!")
-            exit()
+            return
         else:
             turn += 1 
     print(f"X/{tries} - Sorry, try again tomorrow!")
- 
- 
+
+
 if __name__ == "__main__": 
     main()
