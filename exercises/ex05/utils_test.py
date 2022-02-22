@@ -1,4 +1,4 @@
-"""Testing the functionality of list utility functions."""
+"""Testing the functionality of list related functions."""
 
 __author__ = "730469821"
 

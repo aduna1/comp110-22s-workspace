@@ -1,4 +1,4 @@
-"""An assignment on list utility functions."""
+"""An assignment on list related functions."""
 
 __author__ = "730469821"
 
