@@ -27,7 +27,7 @@ def test_sub_empty() -> None:
     """Tests sub function for a an empty list."""
     test_list: list[int] = []
     ts: int = 0
-    te: int = 3
+    te: int = 0
     assert sub(test_list, ts, te) == []
 
 
