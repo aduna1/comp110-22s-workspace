@@ -12,7 +12,7 @@ def test_only_evens_empty() -> None:
 
 
 def test_only_evens_all_odd() -> None:
-    """Tests only_evens function for a list of odd integers"""
+    """Tests only_evens function for a list of odd integers."""
     test_list: list[int] = [3, 9, 23, 99]
     assert only_evens(test_list) == []
 
