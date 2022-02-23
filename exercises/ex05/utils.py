@@ -3,7 +3,7 @@
 __author__ = "730469821"
 
 
-def only_evens(a: list[int]) -> list:
+def only_evens(a: list[int]) -> list[int]:
     """A function that returns only even numbers in a list of integers."""
     evens: list[int] = list()
     for item in a:
@@ -12,7 +12,7 @@ def only_evens(a: list[int]) -> list:
     return evens
 
 
-def sub(a_list: list[int], a: int, b: int) -> list:
+def sub(a_list: list[int], a: int, b: int) -> list[int]:
     """A function that takes a list of integers and two indices and returns the items in the list between the two additional integer inputs."""
     sub_list: list[int] = list()
     if a < 0:
@@ -28,7 +28,7 @@ def sub(a_list: list[int], a: int, b: int) -> list:
     return sub_list
 
 
-def concat(a: list[int], b: list[int]) -> list:
+def concat(a: list[int], b: list[int]) -> list[int]:
     """A function that takes two lists and joins them together."""
     new_list: list[int] = a
     i: int = 0
