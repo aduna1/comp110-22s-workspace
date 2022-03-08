@@ -4,6 +4,7 @@ __author__ = "730469821"
 
 
 def invert(old_dictionary: dict[str, str]) -> dict[str, str]:
+    """A function that inverts a dictionary input, making the keys the values and vice versa."""
     invert_dict: dict[str, str] = {}
     for key in old_dictionary:
         value: str = old_dictionary[key]
@@ -14,6 +15,7 @@ def invert(old_dictionary: dict[str, str]) -> dict[str, str]:
 
 
 def favorite_color(name_color: dict[str, str]) -> str:
+    """A function that returns the most frequently occurring color in a dictionary of names and favorite colors."""
     fav_colors: dict[str, int] = {}
     for key in name_color:
         value: str = name_color[key]
@@ -31,6 +33,7 @@ def favorite_color(name_color: dict[str, str]) -> str:
 
 
 def count(xs: list[str]) -> dict[str, int]:
+    """A function that counts the number of times a string appears in a list and constructs a dictionary that assigns the number of times a string appears to said string."""
     d: dict[str, int] = {}
     for item in xs: 
         if item in d:
